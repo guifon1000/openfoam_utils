@@ -1,0 +1,34 @@
+{
+    "FoamFile": {
+        "location": "'system'", 
+        "version": 2.0, 
+        "class": "dictionary", 
+        "object": "meshDict", 
+        "format": "ascii"
+    }, 
+    "surfaceFile": "'cylinder_zero.fms'", 
+    "boundaryLayers": {
+        "optimiseLayer": 2, 
+        "patchBoundaryLayers": {
+            "cylinder": {
+                "nLayers": 10, 
+                "thicknessRatio": 1.5
+            }
+        }, 
+        "optimisationParameters": {
+            "relThicknessTol": 0.05, 
+            "nSmoothNormals": 50, 
+            "reCalculateNormals": 1, 
+            "maxNumIterations": 10, 
+            "featureSizeFactor": 0.7
+        }, 
+        "nLayers": 1
+    }, 
+    "maxCellSize": 0.045, 
+    "localRefinement": {
+        "cylinder": {
+            "refinementThickness": 0.01, 
+            "cellSize": 0.005
+        }
+    }
+}
